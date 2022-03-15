@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="mx.edu.uttijuana.Exam.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewA"
+        style="@style/style_text_view"
+        android:text="@string/label_a"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/editTextA"
+        style="@style/style_edit_text"
+        android:layout_below="@+id/textViewA"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewB"
+        style="@style/style_text_view"
+        android:text="@string/label_b"
+        android:layout_below="@+id/editTextA"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/editTextB"
+        style="@style/style_edit_text"
+        android:layout_below="@+id/textViewB"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewC"
+        style="@style/style_text_view"
+        android:text="@string/label_c"
+        android:layout_below="@+id/editTextB"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:id="@+id/editTextC"
+        style="@style/style_edit_text"
+        android:layout_below="@+id/textViewC"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewX1"
+        style="@style/style_text_view"
+        android:text="@string/label_x1"
+        android:layout_below="@+id/editTextC"
+        />
+
+    <EditText
+        android:id="@+id/editTextX1"
+        style="@style/style_edit_text"
+        android:layout_below="@+id/textViewX1"
+        />
+
+    <TextView
+        android:id="@+id/textViewX2"
+        style="@style/style_text_view"
+        android:text="@string/label_x2"
+        android:layout_below="@+id/editTextX1"
+        />
+
+    <EditText
+        android:id="@+id/editTextX2"
+        style="@style/style_edit_text"
+        android:layout_below="@+id/textViewX2"
+        />
+    <Button
+        android:id="@+id/buttonOk"
+        android:text="@string/button_ok"
+        style="@style/style_button"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView -->
+    <style name="style_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/color_label_text</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="style_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/color_label_text</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <!-- Button -->
+    <style name="style_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/color_label_text</item>
+        <item name="backgroundColor">@color/color_background</item>
+    </style>
+
+</resources>
