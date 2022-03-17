@@ -1,28 +1,30 @@
 package mx.edu.uttijuana.exam;
 
-public abstract class Equation {
-    private final int a;
-    private final int b;
-    private final int c;
+public class Equation {
+    private int a;
+    private int b;
+    private int c;
 
-    public Equation(){
-        this.a = 1;
-        this.b = 1;
-        this.c = 1;
-    }
-
-    public Equation(int a, int b, int c){
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public Equation(int a, int b, int c) throws InvalidEquationException {
+        setA(a); setB(b); setC(c);
+        if (getDiscriminant() < 0) throw new InvalidEquationException();
     }
 
     public int getA() { return a; }
     public int getB() { return b; }
     public int getC() { return c; }
 
-    public abstract double getX1();
-    public abstract double getX2();
+    public void setA(int a) { this.a = a; }
+    public void setB(int b) { this.b = b; }
+    public void setC(int c) { this.c = c; }
 
-    private void getDiscriminant() throws InvalidDiscriminantException { }
+    public double getX1(){
+        return (-getB() + Math.pow(getDiscriminant(), 0.5)) / (2.0 * getA());
+    }
+    public double getX2() {
+        return (-getB() - Math.pow(getDiscriminant(), 0.5)) / (2.0 * getA());
+    }
+    private double getDiscriminant() {
+        return getB() * getB() - 4.0 * getA() * getC();
+    }
 }

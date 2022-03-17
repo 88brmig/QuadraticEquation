@@ -2,10 +2,10 @@ package mx.edu.uttijuana.exam;
 
 import androidx.annotation.Nullable;
 
-public class InvalidDiscriminantException extends Exception {
+public class InvalidEquationException extends Exception {
     private String message;
 
-    public InvalidDiscriminantException() {
+    public InvalidEquationException() {
        this.message = "Discriminant must be greater than zero";
     }
 

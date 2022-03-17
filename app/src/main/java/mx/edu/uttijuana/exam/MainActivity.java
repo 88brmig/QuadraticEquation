@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
             int b = Integer.parseInt(editB.getText().toString());
             int c = Integer.parseInt(editC.getText().toString());
 
-            QuadraticEquation q = new QuadraticEquation(a,b,c);
+            Equation q = new Equation(a,b,c);
 
             editX1.setText(String.valueOf(q.getX1()));
             editX2.setText(String.valueOf(q.getX2()));
-        } catch (InvalidDiscriminantException e){
+        } catch (InvalidEquationException e){
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }

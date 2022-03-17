@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rectangle</string>
+    <string name="app_name">QuadraticEq</string>
     <string name="label_a">A:</string>
     <string name="label_b">B:</string>
     <string name="label_c">C:</string>
